@@ -124,7 +124,7 @@ class TeleoperationNode(Node):
         return command
 
     def send_gripper_command(self, client, command):
-        client.wait_for_server()
+        client.wait_for_server(timeout_sec=2.0)
         future = client.send_goal_async(command)
         future.add_done_callback(self.goal_response_callback)
 
