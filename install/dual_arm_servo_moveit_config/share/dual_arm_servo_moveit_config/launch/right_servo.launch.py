@@ -1,1 +1,0 @@
-/workspaces/challenge_ws/src/dual_arm_servo_moveit_config/launch/right_servo.launch.py

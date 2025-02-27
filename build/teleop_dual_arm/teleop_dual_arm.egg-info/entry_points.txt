@@ -1,3 +1,0 @@
-[console_scripts]
-teleop_node = teleop_dual_arm.teleop_node:main
-

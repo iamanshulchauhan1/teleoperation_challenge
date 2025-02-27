@@ -56,10 +56,10 @@ class TeleoperationNode(Node):
 
                 if handedness == 'Left':
                     self.left_arm_pose_pub.publish(pose_msg)
-                    self.send_gripper_command(self.left_gripper_client, gripper_command)
+                #     self.send_gripper_command(self.left_gripper_client, gripper_command)
                 else:
                     self.right_arm_pose_pub.publish(pose_msg)
-                    self.send_gripper_command(self.right_gripper_client, gripper_command)
+                #     self.send_gripper_command(self.right_gripper_client, gripper_command)
 
                 self.mp_draw.draw_landmarks(frame, hand_landmarks, self.mp_hands.HAND_CONNECTIONS)
 
@@ -71,7 +71,7 @@ class TeleoperationNode(Node):
     def create_pose_msg(self, hand_landmarks, frame_id):
         # Adjust scaling factors and offsets based on actual workspace
         z_scale = 1.5  # Adjusted scaling factors
-        rotation_z_scale = 2.0  # Adjusted scaling factors
+        rotation_z_scale = 3.0  # Adjusted scaling factors
         x_offset, y_offset = 0,0  # Adjusted offsets
 
         # Correct the axes mapping based on observed behavior
@@ -80,20 +80,17 @@ class TeleoperationNode(Node):
         robot_z = 1 - hand_landmarks.landmark[0].y  # Corrected for forward/backward
         robot_y = 0.5 - hand_landmarks.landmark[0].x     # Corrected for left/right
 
-        # Example rotation measure along z-axis
-        p0 = np.array([hand_landmarks.landmark[0].x,
-                   hand_landmarks.landmark[0].y,
-                   hand_landmarks.landmark[0].z])
-        p5 = np.array([hand_landmarks.landmark[5].x,
-                    hand_landmarks.landmark[5].y,
-                    hand_landmarks.landmark[5].z])
-        p17 = np.array([hand_landmarks.landmark[17].x,
-                        hand_landmarks.landmark[17].y,
-                        hand_landmarks.landmark[17].z])
-        normal_vector = np.cross(p17 - p0, p5 - p17)
-        normal_vector /= np.linalg.norm(normal_vector)
+        a = np.array([hand_landmarks.landmark[0].x, hand_landmarks.landmark[0].y]) # First coord
+        b = np.array([hand_landmarks.landmark[5].x, hand_landmarks.landmark[5].y]) # Second coord
+        c = np.array([hand_landmarks.landmark[17].x, hand_landmarks.landmark[17].y]) # Third coord
+        
+        radians = np.arctan2(c[1] - b[1], c[0]-b[0]) - np.arctan2(a[1]-b[1], a[0]-b[0])
+        angle = np.abs(radians*180.0/np.pi)
+        
+        if angle > 180.0:
+            angle = 360-angle
 
-        print(normal_vector[0])
+        staright_hande_angle = 65
 
         pose = PoseStamped()
         pose.header.stamp = self.get_clock().now().to_msg()
@@ -105,7 +102,7 @@ class TeleoperationNode(Node):
         # Simple rotation along z-axis
         # convert rads to quaternion
         # print(math.radians(rotation_z))
-        q = quaternion_from_euler(math.radians(180) + (rotation_z_scale * (-0.1 - normal_vector[0])), 0, 0)
+        q = quaternion_from_euler(math.radians(180 + rotation_z_scale*(staright_hande_angle - angle)), 0, 0)
         pose.pose.orientation.x = q[0]
         pose.pose.orientation.y = q[1]
         pose.pose.orientation.z = q[2]
