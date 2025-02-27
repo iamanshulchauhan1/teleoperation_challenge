@@ -1,0 +1,28 @@
+{
+    "name": "Teleop Challenge",
+    "image": "telechallenge_image:latest",
+    "runArgs": [
+        "-e", "DISPLAY",
+        "-v", "/tmp/.X11-unix:/tmp/.X11-unix",
+        // If using a Linux host, you can pass in video devices:
+        "--device=/dev/video0:/dev/video0",
+
+        "--privileged=true",
+
+        "--network=host"
+    ],  
+    "customizations": {
+        // Make sure we have GitLens, etc. inside the container
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-python.python",
+                "ms-iot.vscode-ros",      
+                "twxs.cmake",           
+                "eamodio.gitlens"
+            ]
+        }
+    },
+    //
+    "postCreateCommand": "echo 'source /opt/ros/humble/setup.bash' >> ~/.bashrc"
+}

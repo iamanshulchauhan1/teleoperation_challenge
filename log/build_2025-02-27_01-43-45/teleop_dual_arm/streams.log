@@ -1,0 +1,17 @@
+[0.393s] Invoking command in '/workspaces/challenge_ws/build/teleop_dual_arm': PYTHONPATH=/workspaces/challenge_ws/build/teleop_dual_arm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/challenge_ws/install/teleop_dual_arm/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspaces/challenge_ws/build/teleop_dual_arm/build --no-deps symlink_data
+[0.547s] running develop
+[0.637s] running egg_info
+[0.637s] writing teleop_dual_arm.egg-info/PKG-INFO
+[0.637s] writing dependency_links to teleop_dual_arm.egg-info/dependency_links.txt
+[0.638s] writing entry points to teleop_dual_arm.egg-info/entry_points.txt
+[0.638s] writing requirements to teleop_dual_arm.egg-info/requires.txt
+[0.638s] writing top-level names to teleop_dual_arm.egg-info/top_level.txt
+[0.638s] reading manifest file 'teleop_dual_arm.egg-info/SOURCES.txt'
+[0.639s] writing manifest file 'teleop_dual_arm.egg-info/SOURCES.txt'
+[0.640s] running build_ext
+[0.640s] Creating /workspaces/challenge_ws/install/teleop_dual_arm/lib/python3.10/site-packages/teleop-dual-arm.egg-link (link to .)
+[0.640s] Installing teleop_node script to /workspaces/challenge_ws/install/teleop_dual_arm/lib/teleop_dual_arm
+[0.640s] 
+[0.641s] Installed /workspaces/challenge_ws/build/teleop_dual_arm
+[0.641s] running symlink_data
+[0.657s] Invoked command in '/workspaces/challenge_ws/build/teleop_dual_arm' returned '0': PYTHONPATH=/workspaces/challenge_ws/build/teleop_dual_arm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/challenge_ws/install/teleop_dual_arm/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspaces/challenge_ws/build/teleop_dual_arm/build --no-deps symlink_data

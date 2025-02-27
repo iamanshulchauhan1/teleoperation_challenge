@@ -1,0 +1,44 @@
+[0.016s] Invoking command in '/workspaces/challenge_ws/build/dual_arm_servo_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/challenge_ws/install/teleop_dual_arm:/root/ws_moveit/install/moveit_configs_utils:/opt/ros/humble /usr/bin/cmake --build /workspaces/challenge_ws/build/dual_arm_servo_moveit_config -- -j20 -l20
+[0.183s] Invoked command in '/workspaces/challenge_ws/build/dual_arm_servo_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/challenge_ws/install/teleop_dual_arm:/root/ws_moveit/install/moveit_configs_utils:/opt/ros/humble /usr/bin/cmake --build /workspaces/challenge_ws/build/dual_arm_servo_moveit_config -- -j20 -l20
+[0.193s] Invoking command in '/workspaces/challenge_ws/build/dual_arm_servo_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/challenge_ws/install/teleop_dual_arm:/root/ws_moveit/install/moveit_configs_utils:/opt/ros/humble /usr/bin/cmake --install /workspaces/challenge_ws/build/dual_arm_servo_moveit_config
+[0.199s] -- Install configuration: ""
+[0.199s] -- Execute custom install script
+[0.199s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/ament_index/resource_index/package_run_dependencies/dual_arm_servo_moveit_config
+[0.199s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/ament_index/resource_index/parent_prefix_path/dual_arm_servo_moveit_config
+[0.199s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/environment/ament_prefix_path.sh
+[0.199s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/environment/ament_prefix_path.dsv
+[0.199s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/environment/path.sh
+[0.199s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/environment/path.dsv
+[0.199s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/local_setup.bash
+[0.199s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/local_setup.sh
+[0.199s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/local_setup.zsh
+[0.199s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/local_setup.dsv
+[0.200s] -- Symlinking: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/package.dsv
+[0.208s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/ament_index/resource_index/packages/dual_arm_servo_moveit_config
+[0.209s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/cmake/dual_arm_servo_moveit_configConfig.cmake
+[0.209s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/cmake/dual_arm_servo_moveit_configConfig-version.cmake
+[0.209s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/package.xml
+[0.209s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/launch/left_servo.launch.py
+[0.209s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/launch/move_group.launch.py
+[0.209s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/launch/moveit.rviz
+[0.209s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/launch/right_servo.launch.py
+[0.209s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/config/hand.xacro
+[0.209s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/config/joint_limits.yaml
+[0.209s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/config/kinematics.yaml
+[0.210s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/config/left_arm_servo_config.yaml
+[0.210s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/config/left_hand_servo_config.yaml
+[0.210s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/config/left_initial_positions.yaml
+[0.210s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/config/moveit_controllers.yaml
+[0.210s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/config/ompl_planning.yaml
+[0.210s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/config/panda.ros2_control.xacro
+[0.210s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/config/panda.srdf
+[0.210s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/config/panda.urdf.xacro
+[0.210s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/config/panda_arm_macro.xacro
+[0.210s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/config/panda_hand.ros2_control.xacro
+[0.210s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/config/pilz_cartesian_limits.yaml
+[0.210s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/config/right_arm_servo_config.yaml
+[0.210s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/config/right_hand_servo_config.yaml
+[0.210s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/config/right_initial_positions.yaml
+[0.210s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/config/ros2_controllers.yaml
+[0.210s] -- Up-to-date symlink: /workspaces/challenge_ws/install/dual_arm_servo_moveit_config/share/dual_arm_servo_moveit_config/config/servo_parameters.yaml
+[0.212s] Invoked command in '/workspaces/challenge_ws/build/dual_arm_servo_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/challenge_ws/install/teleop_dual_arm:/root/ws_moveit/install/moveit_configs_utils:/opt/ros/humble /usr/bin/cmake --install /workspaces/challenge_ws/build/dual_arm_servo_moveit_config

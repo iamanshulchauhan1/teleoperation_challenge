@@ -1,0 +1,36 @@
+[0.449s] Invoking command in '/workspaces/challenge_ws/build/teleop_dual_arm': PYTHONPATH=/workspaces/challenge_ws/build/teleop_dual_arm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/challenge_ws/install/teleop_dual_arm/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /workspaces/challenge_ws/build/teleop_dual_arm/build
+[0.626s] running develop
+[0.717s] Removing /workspaces/challenge_ws/install/teleop_dual_arm/lib/python3.10/site-packages/teleop-dual-arm.egg-link (link to .)
+[0.743s] Invoked command in '/workspaces/challenge_ws/build/teleop_dual_arm' returned '0': PYTHONPATH=/workspaces/challenge_ws/build/teleop_dual_arm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/challenge_ws/install/teleop_dual_arm/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /workspaces/challenge_ws/build/teleop_dual_arm/build
+[0.744s] Invoking command in '/workspaces/challenge_ws/src/teleop_dual_arm': PYTHONPATH=/workspaces/challenge_ws/build/teleop_dual_arm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/challenge_ws/install/teleop_dual_arm/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/teleop_dual_arm build --build-base /workspaces/challenge_ws/build/teleop_dual_arm/build install --record /workspaces/challenge_ws/build/teleop_dual_arm/install.log --single-version-externally-managed install_data --force
+[0.900s] running egg_info
+[0.901s] writing ../../build/teleop_dual_arm/teleop_dual_arm.egg-info/PKG-INFO
+[0.901s] writing dependency_links to ../../build/teleop_dual_arm/teleop_dual_arm.egg-info/dependency_links.txt
+[0.901s] writing entry points to ../../build/teleop_dual_arm/teleop_dual_arm.egg-info/entry_points.txt
+[0.901s] writing requirements to ../../build/teleop_dual_arm/teleop_dual_arm.egg-info/requires.txt
+[0.901s] writing top-level names to ../../build/teleop_dual_arm/teleop_dual_arm.egg-info/top_level.txt
+[0.902s] reading manifest file '../../build/teleop_dual_arm/teleop_dual_arm.egg-info/SOURCES.txt'
+[0.903s] writing manifest file '../../build/teleop_dual_arm/teleop_dual_arm.egg-info/SOURCES.txt'
+[0.903s] running build
+[0.903s] running build_py
+[0.903s] creating /workspaces/challenge_ws/build/teleop_dual_arm/build
+[0.903s] creating /workspaces/challenge_ws/build/teleop_dual_arm/build/lib
+[0.903s] creating /workspaces/challenge_ws/build/teleop_dual_arm/build/lib/teleop_dual_arm
+[0.903s] copying teleop_dual_arm/__init__.py -> /workspaces/challenge_ws/build/teleop_dual_arm/build/lib/teleop_dual_arm
+[0.903s] copying teleop_dual_arm/teleop_node.py -> /workspaces/challenge_ws/build/teleop_dual_arm/build/lib/teleop_dual_arm
+[0.904s] running install
+[0.904s] running install_lib
+[0.904s] creating /workspaces/challenge_ws/install/teleop_dual_arm/lib/python3.10/site-packages/teleop_dual_arm
+[0.904s] copying /workspaces/challenge_ws/build/teleop_dual_arm/build/lib/teleop_dual_arm/__init__.py -> /workspaces/challenge_ws/install/teleop_dual_arm/lib/python3.10/site-packages/teleop_dual_arm
+[0.904s] copying /workspaces/challenge_ws/build/teleop_dual_arm/build/lib/teleop_dual_arm/teleop_node.py -> /workspaces/challenge_ws/install/teleop_dual_arm/lib/python3.10/site-packages/teleop_dual_arm
+[0.904s] byte-compiling /workspaces/challenge_ws/install/teleop_dual_arm/lib/python3.10/site-packages/teleop_dual_arm/__init__.py to __init__.cpython-310.pyc
+[0.904s] byte-compiling /workspaces/challenge_ws/install/teleop_dual_arm/lib/python3.10/site-packages/teleop_dual_arm/teleop_node.py to teleop_node.cpython-310.pyc
+[0.905s] running install_data
+[0.905s] copying resource/teleop_dual_arm -> /workspaces/challenge_ws/install/teleop_dual_arm/share/ament_index/resource_index/packages
+[0.905s] copying package.xml -> /workspaces/challenge_ws/install/teleop_dual_arm/share/teleop_dual_arm
+[0.906s] running install_egg_info
+[0.907s] Copying ../../build/teleop_dual_arm/teleop_dual_arm.egg-info to /workspaces/challenge_ws/install/teleop_dual_arm/lib/python3.10/site-packages/teleop_dual_arm-0.0.0-py3.10.egg-info
+[0.908s] running install_scripts
+[0.924s] Installing teleop_node script to /workspaces/challenge_ws/install/teleop_dual_arm/lib/teleop_dual_arm
+[0.924s] writing list of installed files to '/workspaces/challenge_ws/build/teleop_dual_arm/install.log'
+[0.943s] Invoked command in '/workspaces/challenge_ws/src/teleop_dual_arm' returned '0': PYTHONPATH=/workspaces/challenge_ws/build/teleop_dual_arm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/challenge_ws/install/teleop_dual_arm/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/teleop_dual_arm build --build-base /workspaces/challenge_ws/build/teleop_dual_arm/build install --record /workspaces/challenge_ws/build/teleop_dual_arm/install.log --single-version-externally-managed install_data --force

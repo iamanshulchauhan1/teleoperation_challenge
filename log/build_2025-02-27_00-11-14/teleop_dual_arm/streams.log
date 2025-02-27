@@ -1,0 +1,24 @@
+[0.383s] Invoking command in '/workspaces/challenge_ws/build/teleop_dual_arm': PYTHONPATH=/workspaces/challenge_ws/build/teleop_dual_arm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/challenge_ws/install/teleop_dual_arm/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspaces/challenge_ws/build/teleop_dual_arm/build --no-deps symlink_data
+[0.541s] running develop
+[0.627s] running egg_info
+[0.627s] creating teleop_dual_arm.egg-info
+[0.627s] writing teleop_dual_arm.egg-info/PKG-INFO
+[0.628s] writing dependency_links to teleop_dual_arm.egg-info/dependency_links.txt
+[0.628s] writing entry points to teleop_dual_arm.egg-info/entry_points.txt
+[0.628s] writing requirements to teleop_dual_arm.egg-info/requires.txt
+[0.628s] writing top-level names to teleop_dual_arm.egg-info/top_level.txt
+[0.628s] writing manifest file 'teleop_dual_arm.egg-info/SOURCES.txt'
+[0.629s] reading manifest file 'teleop_dual_arm.egg-info/SOURCES.txt'
+[0.629s] writing manifest file 'teleop_dual_arm.egg-info/SOURCES.txt'
+[0.630s] running build_ext
+[0.630s] Creating /workspaces/challenge_ws/install/teleop_dual_arm/lib/python3.10/site-packages/teleop-dual-arm.egg-link (link to .)
+[0.630s] Installing teleop_node script to /workspaces/challenge_ws/install/teleop_dual_arm/lib/teleop_dual_arm
+[0.630s] 
+[0.630s] Installed /workspaces/challenge_ws/build/teleop_dual_arm
+[0.630s] running symlink_data
+[0.630s] creating /workspaces/challenge_ws/install/teleop_dual_arm/share/ament_index
+[0.630s] creating /workspaces/challenge_ws/install/teleop_dual_arm/share/ament_index/resource_index
+[0.631s] creating /workspaces/challenge_ws/install/teleop_dual_arm/share/ament_index/resource_index/packages
+[0.631s] symbolically linking /workspaces/challenge_ws/build/teleop_dual_arm/resource/teleop_dual_arm -> /workspaces/challenge_ws/install/teleop_dual_arm/share/ament_index/resource_index/packages
+[0.631s] symbolically linking /workspaces/challenge_ws/build/teleop_dual_arm/package.xml -> /workspaces/challenge_ws/install/teleop_dual_arm/share/teleop_dual_arm
+[0.650s] Invoked command in '/workspaces/challenge_ws/build/teleop_dual_arm' returned '0': PYTHONPATH=/workspaces/challenge_ws/build/teleop_dual_arm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/challenge_ws/install/teleop_dual_arm/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspaces/challenge_ws/build/teleop_dual_arm/build --no-deps symlink_data
