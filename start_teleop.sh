@@ -1,6 +1,12 @@
   #!/bin/bash
+  rosdep install --from-paths src --ignore-src -r -y
+  pip install --upgrade transforms3d
+  source /opt/ros/humble/setup.bash
+  source /root/ws_moveit/install/setup.bash
+  
   colcon build --symlink-install
   source install/setup.bash
+
   # Launch Move Group
   ros2 launch dual_arm_servo_moveit_config move_group.launch.py &
   
