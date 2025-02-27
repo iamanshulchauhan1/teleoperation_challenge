@@ -35,38 +35,35 @@ This project focuses on vision-based teleoperation for dual-arm robotic systems 
    ```sh
     docker build -t telechallenge_image .
    ```
-3. Open the project in a development container using **DevContainer** in VS Code.
-   - Ensure you have the **Dev Containers extension** installed.
-   - Open the project folder and reopen it in a container.
-   - All dependencies will be automatically installed inside the container.
 
 ---
 
 ## Usage
 
-After opening the development container, you can run all necessary commands from a single script.
+Execute the following script to start the docker container and launch all ros nodes using another helper script `start_teleop.sh`:
+```sh
+   ./start.sh
+```
 
-Running the Teleoperation System
-
-Execute the following script to launch all required components:
+## Using Devcontainers (Optional)
+1. Open the project in a development container using **DevContainer** in VS Code.
+   - Ensure you have the **Dev Containers extension** installed.
+   - Open the project folder and reopen it in a container.
+   - All dependencies will be automatically installed inside the container.
+2.  Run the following script inside the container.
 ```sh
    ./start_teleop.sh
 ```
-
-
-What start_teleop.sh Does
+### What does start_teleop.sh contain:
 
 This script performs the following actions:
-
-- Builds the ROS 2 workspace.
+- Install the necessary dependencies
 - Sources the required setup files.
+- Builds the ROS 2 workspace.
 - Launches the Move Group for motion planning.
 - Launches the left and right arm servo nodes.
 - Switches the command type for both arms.
 - Starts the teleoperation node for user control.
-
-
-
 ## Gripper Control
    The gripper is controlled by detecting the touching of the tip of the thumb and index finger. When the fingers touch, the gripper closes; otherwise, it remains open.
 
