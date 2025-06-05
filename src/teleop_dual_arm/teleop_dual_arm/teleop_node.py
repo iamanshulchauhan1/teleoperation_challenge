@@ -114,7 +114,7 @@ class TeleoperationNode(Node):
         if angle > 180.0:
             angle = 360-angle
 
-        staright_hande_angle = 65
+        straight_hand_angle = 65
 
         pose = PoseStamped()
         pose.header.stamp = self.get_clock().now().to_msg()
@@ -124,9 +124,9 @@ class TeleoperationNode(Node):
         pose.pose.position.z = round(z_scale * robot_z, 1) if robot_z > 0 else 0.0  # Slightly above base for safety
 
         # Simple rotation along z-axis
-        # convert rads to quaternion
-        # print(math.radians(rotation_z))
-        q = quaternion_from_euler(math.radians(180 + rotation_z_scale * math.ceil((staright_hande_angle - angle)/5) * 5), 0, 0)
+        # convert degrees to quaternion
+        rotation_z = math.radians(180 + rotation_z_scale * math.ceil((straight_hand_angle - angle) / 5) * 5)
+        q = quaternion_from_euler(0, 0, rotation_z)
         pose.pose.orientation.x = q[0]
         pose.pose.orientation.y = q[1]
         pose.pose.orientation.z = q[2]
